@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Port Finder</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        input[type="text"] {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1%;
+            color: gray;
+        }
+        p {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Port Finder</h1>
+    <form action="/finder_result" method="post">
+        <label for="ip">IP:</label>
+        <input type="text" id="ip" name="ip" required>
+        <input type="submit" value="Find">
+    </form>
+    <footer>Made by Greg</footer>
+    <p>The search can delay from 30s-1m</p>
+</body>
+</html>

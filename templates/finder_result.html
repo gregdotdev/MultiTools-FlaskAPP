@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Port Finder - Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 50px auto;
+            max-width: 500px;
+        }
+        
+        li {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: blue;
+            font-size: x-large;
+        }
+        
+        strong {
+            color: blue;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Port Finder - Result</h1>
+    <p>Open Ports:</p>
+    {% if open_ports %}
+        <ul>
+            {% for port in open_ports %}
+                <li>{{ port }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Any open ports found.</p>
+    {% endif %}
+    <a href="/port_finder">Back</a>
+</body>
+</html>

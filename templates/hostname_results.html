@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostname Search Details</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .box {
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 50px auto;
+            max-width: 500px;
+        }
+        
+        li {
+            margin-bottom: 20px;
+        }
+        
+        strong {
+            color: blue;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Hostname Search Results:</h1>
+        <ul>
+            <li><strong>Numeric IP:</strong> {{ numerical_ip }}</li>
+            <li><strong>Default Port:</strong> {{ numerical_port }}</li>
+        </ul>
+        <a href="/hostname">Back to search</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UUID Finder</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        input[type="text"] {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        footer {
+            margin-top: 30px;
+            color: #888888;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>UUID Finder</h1>
+    <form action="/uuid-results" method="POST">
+        <input type="text" name="username" placeholder="Type the username from minecraft:" required>
+        <input type="submit" value="Find">
+    </form>
+    <footer>Made by Greg with ❤️</footer>
+</body>
+</html>

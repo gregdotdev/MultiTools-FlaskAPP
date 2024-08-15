@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <style>
+        body {
+            background-color: #242424;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins';
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            background-color: #303030;
+            color: white;
+            font-family: 'Poppins';
+            margin-bottom: 20px;
+        }
+
+        .status {
+            color: greenyellow;
+            font-size: 22px;
+            font-family: 'Poppins';
+        }
+
+        .card button {
+            border: none;
+            border-radius: 10px;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 80%;
+            font-size: 18px;
+            font-family: 'Poppins';
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://img.freepik.com/icones-gratis/placeholder_318-361863.jpg?t=st=1685673723~exp=1685674323~hmac=5851eb7cd861be340201d546a6d07a57c75163046f3ebfa3d0934ce96f94f642" alt="img" style="width:100%">
+        <h1>IP Search</h1>
+        <p class="status">online</p>
+        <p>Get the IP location from the user</p>
+        <p><button onclick="location.href='/search'">Go!</button></p>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/44/44948.png?w=1380&t=st=1685673667~exp=1685674267~hmac=785606f43b36ea2ab8fe4b3fdc6a625ad5b62be73cb4f9cf808d17f08e588465" alt="img" style="width:100%">
+        <h1>UUID Search</h1>
+        <p class="status">online</p>
+        <p>Get an UUID from the minecraft Nickname</p>
+        <p><button onclick="location.href='/uuid-search'">Go!</button></p>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1239/1239345.png?w=1380&t=st=1685673531~exp=1685674131~hmac=4bd23c763b3ee0b455143741e1a11f1dc6f70c97b3754fc8beedd059963327d6" alt="img" style="width:100%">
+        <h1>Hostname Finder</h1>
+        <p class="status">online</p>
+        <p>Get an numeric IP from an minecraft server</p>
+        <p><button onclick="location.href='/hostname'">Go!</button></p>
+    </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1239/1239345.png?w=1380&t=st=1685673531~exp=1685674131~hmac=4bd23c763b3ee0b455143741e1a11f1dc6f70c97b3754fc8beedd059963327d6" alt="img" style="width:100%">
+        <h1>Port Finder</h1>
+        <p class="status">online</p>
+        <p>Get all the open ports from an minecraft server using nmap</p>
+        <p><button onclick="location.href='/port_finder'">Go!</button></p>
+    </div>
+</body>
+
+</html>

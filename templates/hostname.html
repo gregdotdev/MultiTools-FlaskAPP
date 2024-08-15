@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar IP</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        input[type="text"] {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find IP</h1>
+    <form action="/get_numerical_ip" method="POST">
+        <input type="text" name="hostname" placeholder="Type an hostname">
+        <input type="submit" value="Find">
+    </form>
+    <footer>Made by Greg</footer>
+</body>
+</html>
